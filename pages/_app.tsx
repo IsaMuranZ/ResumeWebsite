@@ -6,20 +6,10 @@ import NameAndPic from "../components/nameAndPic";
 import ContactButtons from '../components/ContactButtons';
 import SidebarDropdownBox from '../components/SidebarDropdownBox';
 import FloatingButtons from '../components/FloatingButtons';
+import ContactParentComponent from "../components/ContactParentComponent";
 
 // Define the main page component
 function HomePage() {
-    // State to keep track of the text to display based on hover or default
-    const [displayText, setDisplayText] = useState("Default Text");
-
-    const buttonsData = [
-        { symbol: "✈️", hoverText: "Travel" },
-        { symbol: "🍽", hoverText: "Dine" },
-        { symbol: "🎓", hoverText: "Learn" },
-        { symbol: "🎨", hoverText: "Art" },
-        { symbol: "🏞", hoverText: "Nature" },
-    ];
-
     return (
         <div className="font-serif min-h-screen flex flex-col">
             <header className="bg-sky-100 p-0"> {/* Header content here */} </header>
@@ -29,16 +19,7 @@ function HomePage() {
                 {/* Sidebar (left third) */}
                 <div className="w-1/3 bg-sky-100 p-2 flex flex-col">
                     <NameAndPic/>
-                    <div className="flex flex-wrap justify-between">
-                        {buttonsData.map((button, index) => (
-                            <ContactButtons
-                                key={index}
-                                symbol={button.symbol}
-                                hoverText={button.hoverText}
-                                onMouseEnter={() => setDisplayText(button.hoverText)}
-                            />
-                        ))}
-                    </div>
+                    <ContactParentComponent/>
                     <SidebarDropdownBox boxText="Box 1" boxContent="Content for Box 1"/>
                     <SidebarDropdownBox boxText="Box 2" boxContent="Content for Box 2"/>
                     <SidebarDropdownBox boxText="Box 3" boxContent="Content for Box 3"/>
@@ -54,10 +35,6 @@ function HomePage() {
                         <FloatingButtons symbol="🍫" bodyContent="This Website"/>
                     </div>
                 </div>
-            </div>
-            {/* Always visible text box below the buttons */}
-            <div className="p-2 bg-white shadow-lg border rounded">
-                {displayText}
             </div>
             <footer className="bg-gray-200 p-4"> {/* Footer content here */} </footer>
         </div>

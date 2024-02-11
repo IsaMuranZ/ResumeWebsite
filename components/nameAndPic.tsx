@@ -8,7 +8,10 @@ function NameAndPic() {
         <div className="flex items-center max-w-sm rounded overflow-hidden shadow-lg bg-white p-4">
             <img className="w-16 h-16 mr-4 rounded-full" src="/me.jpg" alt="Me :)"/>
             {/*<div className="px-6 py-4">*/}
-            <h2 className="text-justify font-bold text-xl">Isa Muran</h2>
+            <div className="max-w-sm">
+                <h2 className="text-justify font-bold text-xl">Isa Muran</h2>
+                <h2 className="text-sm">Software Engineer</h2>
+            </div>
             {/*} </div>*/}
         </div>
     );
