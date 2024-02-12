@@ -20,9 +20,11 @@ function HomePage() {
                 <div className="w-1/3 bg-sky-100 p-2 flex flex-col">
                     <NameAndPic/>
                     <ContactParentComponent/>
-                    <SidebarDropdownBox boxText="Box 1" boxContent="Content for Box 1"/>
-                    <SidebarDropdownBox boxText="Box 2" boxContent="Content for Box 2"/>
-                    <SidebarDropdownBox boxText="Box 3" boxContent="Content for Box 3"/>
+                    {/* TODO: add formatting to boxContent so it looks better or similar to my resume */}
+                    <SidebarDropdownBox boxText="Education" boxContent="University of California - Santa Cruz 2020-2023"/>
+                    <SidebarDropdownBox boxText="Languages" boxContent="Bosnian -- B2(Upper-Intermediate)
+                    English -- C2(Very Proficient)"/>
+                    <SidebarDropdownBox boxText="Hobbies/Clubs" boxContent="Slugbotics Team Co-lead -- UCSC Robotics Club"/>
                 </div>
 
                 {/* Main content area (right two-thirds) */}
