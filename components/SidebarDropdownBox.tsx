@@ -1,6 +1,7 @@
 // Import React (necessary for JSX)
-import React from 'react';
+import React, {Fragment, useEffect, useState} from 'react';
 import { FaChevronDown } from 'react-icons/fa';
+import {Transition} from "@headlessui/react";
 
 // Define the component as a function
 const SidebarDropdownBox = ({ boxText, boxContent }) => {
@@ -25,16 +26,25 @@ const SidebarDropdownBox = ({ boxText, boxContent }) => {
             </div>
             {/* Dropdown content */}
             {isClicked && (
-                <div className={`transition-all duration-500 ease-in-out ${isClicked ? 'max-h-96' : 'max-h-0'} overflow-hidden`}>
-                    <div className="p-4">
-                        {boxContent}
-                    </div>
-                </div>
+                <Transition
+                    as={Fragment}
+                    show={isClicked}
+                    enter="transition ease-out duration-500"
+                    enterFrom="transform opacity-0 scale-95"
+                    enterTo="transform opacity-100 scale-100"
+                    leave="transition ease-in duration-500"
+                    leaveFrom="transform opacity-100 scale-100"
+                    leaveTo="transform opacity-0 scale-95"
+                >
+                       <div className="p-4">
+                           {boxContent}
+                       </div>
+                </Transition>
             )}
         </div>
     );
 }
-
+// {`transition-opacity duration-500 ease-in-out ${isClicked ? 'opacity-100' : 'opacity-0'} overflow-hidden`}
 
 // Export the component so it can be used in other parts of the app
 export default SidebarDropdownBox;

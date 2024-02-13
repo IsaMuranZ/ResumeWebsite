@@ -4,6 +4,7 @@ import '../styles/globals.css';
 import About from '../components/About';
 import NameAndPic from "../components/nameAndPic";
 import ContactButtons from '../components/ContactButtons';
+import TestComponent from '../components/TestComponent'
 import SidebarDropdownBox from '../components/SidebarDropdownBox';
 import FloatingButtons from '../components/FloatingButtons';
 import ContactParentComponent from "../components/ContactParentComponent";
@@ -25,6 +26,7 @@ function HomePage() {
                     <SidebarDropdownBox boxText="Languages" boxContent="Bosnian -- B2(Upper-Intermediate)
                     English -- C2(Very Proficient)"/>
                     <SidebarDropdownBox boxText="Hobbies/Clubs" boxContent="Slugbotics Team Co-lead -- UCSC Robotics Club"/>
+                    <TestComponent/>
                 </div>
 
                 {/* Main content area (right two-thirds) */}
