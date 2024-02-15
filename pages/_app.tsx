@@ -6,8 +6,9 @@ import NameAndPic from "../components/nameAndPic";
 import ContactButtons from '../components/ContactButtons';
 import TestComponent from '../components/TestComponent'
 import SidebarDropdownBox from '../components/SidebarDropdownBox';
-import FloatingButtons from '../components/FloatingButtons';
+import FloatingButtons from '../components/FloatingButtonsPCompnent';
 import ContactParentComponent from "../components/ContactParentComponent";
+import FloatingButtonsPCompnent from "../components/FloatingButtonsPCompnent";
 
 // Define the main page component
 function HomePage() {
@@ -31,12 +32,8 @@ function HomePage() {
 
                 {/* Main content area (right two-thirds) */}
                 <div className="w-2/3 p-4">
-                    <About/>
-                    <div className="flex justify-around mt-4">
-                        <FloatingButtons symbol="👻" bodyContent="About Me"/>
-                        <FloatingButtons symbol="💩" bodyContent="Experience"/>
-                        <FloatingButtons symbol="💥" bodyContent="Projects"/>
-                        <FloatingButtons symbol="🍫" bodyContent="This Website"/>
+                    <div className="flex mt-4">
+                        <FloatingButtonsPCompnent/>
                     </div>
                 </div>
             </div>
