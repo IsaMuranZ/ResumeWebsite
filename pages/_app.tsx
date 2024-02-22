@@ -37,7 +37,6 @@ function HomePage() {
                     </div>
                 </div>
             </div>
-            <footer className="bg-gray-200 p-4"> {/* Footer content here */} </footer>
         </div>
     );
 }
