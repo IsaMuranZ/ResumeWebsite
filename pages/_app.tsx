@@ -22,7 +22,8 @@ function HomePage() {
                 <div className="w-1/3 bg-sky-100 p-2 flex flex-col">
                     <NameAndPic/>
                     <ContactParentComponent/>
-                    {/* TODO: add formatting to boxContent so it looks better or similar to my resume */}
+                    {/* TODO: add formatting to boxContent so it looks better or similar to my resume.
+                        First revision of boxContent formatting Feb 29th, 2024*/}
                     <SidebarDropdownBox boxText="Education" boxContent="University of California - Santa Cruz 2020-2023"/>
                     <SidebarDropdownBox boxText="Languages" boxContent="Bosnian -- B2(Upper-Intermediate)
                     English -- C2(Very Proficient)"/>

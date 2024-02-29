@@ -1,7 +1,7 @@
 import React from 'react';
 
 // TODO: Update className on button tag to make enhance UX
-function FloatingButton({ symbol, text, onClick }) {
+function FloatingButton({ symbol, contentKey, onClick }) {
     return (
         <div
             className="rounded overflow-hidden shadow-lg bg-white mb-4 cursor-pointer"
