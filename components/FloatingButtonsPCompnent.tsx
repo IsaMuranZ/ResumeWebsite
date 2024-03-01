@@ -3,6 +3,7 @@ import React, {useState} from 'react';
 import {text} from "node:stream/consumers";
 import ContactButtons from "./ContactButtons";
 import FloatingButton from "./FloatingButton";
+import FloatingButtonText from "./FloatingButtonText";
 
 // Define the component as a function
 const FloatingButtonsPComponent = () => {
@@ -87,7 +88,9 @@ const FloatingButtonsPComponent = () => {
                 ))}
             </div>
             <div className="relative p-4">
-                {activeContent}
+                <FloatingButtonText
+                    text = {activeContent}
+                />
             </div>
         </div>
     );

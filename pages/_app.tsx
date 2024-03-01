@@ -1,7 +1,6 @@
 // Import the React library and the About component
 import React, {useState} from 'react';
 import '../styles/globals.css';
-import About from '../components/About';
 import NameAndPic from "../components/nameAndPic";
 import ContactButtons from '../components/ContactButtons';
 import TestComponent from '../components/TestComponent'

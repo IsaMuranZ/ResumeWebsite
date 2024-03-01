@@ -9,7 +9,7 @@ const SidebarDropdownBox = ({ boxText, boxContent }) => {
     const toggleDropdown = () => setIsClicked(!isClicked);
 
     return (
-        <div className="max-w-sm w-full rounded overflow-hidden shadow-lg bg-white mb-4 cursor-pointer">
+        <div className="w-full rounded overflow-hidden shadow-lg bg-white mb-4 cursor-pointer">
             <div
                 tabIndex={0}
                 onClick={toggleDropdown}
