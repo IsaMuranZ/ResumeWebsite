@@ -27,7 +27,6 @@ function HomePage() {
                     <SidebarDropdownBox boxText="Languages" boxContent="Bosnian -- B2(Upper-Intermediate)
                     English -- C2(Very Proficient)"/>
                     <SidebarDropdownBox boxText="Hobbies/Clubs" boxContent="Slugbotics Team Co-lead -- UCSC Robotics Club"/>
-                    <TestComponent/>
                 </div>
 
                 {/* Main content area (right two-thirds) */}

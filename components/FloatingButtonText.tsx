@@ -18,6 +18,7 @@ const FloatingButtonText = ({text}) => {
         }
     }, [text, displayedText]);
 
+    // TODO: Animate the text fade in to be in a "page turning" style. Look into Framer Motion or other js lib
     return (
         <div className={`transition-opacity duration-500 ${opacity === 100 ? 'opacity-100' : 'opacity-0'}`}>
             {displayedText}
